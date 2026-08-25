@@ -4,20 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Blog</title>
+    <title>Dilemas Digitais & Soluções</title>
     <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
         header {
             background-color: #183C63;
             color: #FFFFFF;
             text-align: center;
-            max-width: 800px;
+            max-width: 100%;
+            padding: 30px 20px;
             margin-bottom: 30px;
-            margin: 0 auto;
         }
 
-        body {
-            background-color: "yellow";
-
+        header button {
+            background: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 5px;
         }
 
         main {
@@ -28,24 +40,7 @@
             margin-bottom: 30px;
             flex-direction: column;
             gap: 20px;
-        }
-
-        img {
-            width: 80px;
-            height: 80px;
-        }
-
-        div p {
-            font-weight: bold;
-        }
-
-        .artigo-autor {
-            font-weight: bold;
-        }
-
-        .imagem {
-            width: 200px;
-            height: 200px;
+            padding: 20px 0;
         }
 
         article {
@@ -56,7 +51,36 @@
             padding: 20px;
             border-radius: 10px;
             width: 90%;
+            max-width: 800px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
 
+        .conteudo-artigo {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        .imagem {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        article button {
+            background: #183C63;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-right: 5px;
         }
 
         footer {
@@ -70,102 +94,94 @@
 
 <body>
     <header>
-        <h1>Meu blog tech</h1>
-        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
-        <button>❤️<span>0</span></button>
-        <button>👍<span>0</span></button>
-
+        <h1>Dilemas Digitais</h1>
+        <p>Discutindo os desafios do mundo online e propondo soluções práticas</p>
+        <button>❤️ <span>0</span></button>
+        <button>👍 <span>0</span></button>
     </header>
+
     <main>
+        <!-- Post 1: Desinformação -->
         <article>
-            <div>
-                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
-                <h2>Meu primeiro post</h2>
+            <div class="conteudo-artigo">
+                <h2>O Desafio das Fake News</h2>
                 <p class="artigo-autor">Por: Alexandra</p>
-                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-                    tecnologia.</p>
-                <button>❤️<span>0</span></button>
-                <button>👎<span>0</span></button>
+                <p><strong>Problema:</strong> A rápida disseminação de notícias falsas pode gerar pânico e manipular opiniões públicas.</p>
+                <p><strong>Solução:</strong> Sempre verifique a fonte da notícia em sites confiáveis antes de compartilhar, confira a data da publicação e leia o texto completo, não apenas a manchete.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👎 <span>0</span></button>
             </div>
             <div>
-                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+                <img src="https://via.placeholder.com/150" alt="Icone de verificação de fatos" class="imagem">
             </div>
         </article>
 
-    </main>
-    <main>
+        <!-- Post 2: Cyberbullying -->
         <article>
-            <div>
-                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
-                <h2>Meu primeiro post</h2>
+            <div class="conteudo-artigo">
+                <h2>Cyberbullying e Respeito Online</h2>
                 <p class="artigo-autor">Por: Alexandra</p>
-                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-                    tecnologia.</p>
-                <button>❤️<span>0</span></button>
-                <button>👎<span>0</span></button>
+                <p><strong>Problema:</strong> Ataques de ódio, ofensas e assédio nas redes sociais afetam diretamente a saúde mental dos usuários.</p>
+                <p><strong>Solução:</strong> Utilize as ferramentas de bloqueio e denúncia das plataformas. Nunca responda a provocações de trolls e guarde capturas de tela como prova, se necessário.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👎 <span>0</span></button>
             </div>
             <div>
-                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+                <img src="https://via.placeholder.com/150" alt="Icone de escudo de segurança" class="imagem">
             </div>
+        </article>
 
-        </article>
-    </main>
-    <main>
+        <!-- Post 3: Privacidade de Dados -->
         <article>
-            <div>
-                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
-                <h2>Meu primeiro post</h2>
+            <div class="conteudo-artigo">
+                <h2>Vazamento de Dados e Privacidade</h2>
                 <p class="artigo-autor">Por: Alexandra</p>
-                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-                    tecnologia.</p>
-                <button>❤️<span>0</span></button>
-                <button>👎<span>0</span></button>
+                <p><strong>Problema:</strong> O compartilhamento excessivo de dados pessoais deixa os usuários vulneráveis a golpes e rastreamento indevido.</p>
+                <p><strong>Solução:</strong> Ative a autenticação em dois fatores (2FA) em suas contas, utilize senhas fortes e exclusivas para cada serviço e ajuste a privacidade do seu perfil nas redes.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👎 <span>0</span></button>
             </div>
             <div>
-                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+                <img src="https://via.placeholder.com/150" alt="Icone de cadeado de privacidade" class="imagem">
             </div>
         </article>
-    </main>
-    <main>
+
+        <!-- Post 4: Vício Digital -->
         <article>
-            <div>
-                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
-                <h2>Meu primeiro post</h2>
+            <div class="conteudo-artigo">
+                <h2>Uso Excessivo de Telas</h2>
                 <p class="artigo-autor">Por: Alexandra</p>
-                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-                    tecnologia.</p>
-                <button>❤️<span>0</span></button>
-                <button>👎<span>0</span></button>
+                <p><strong>Problema:</strong> O tempo prolongado diante de telas reduz a produtividade, afeta o sono e causa ansiedade.</p>
+                <p><strong>Solução:</strong> Defina limites diários nas configurações do celular para aplicativos de redes sociais e faça pausas de 10 minutos a cada hora de uso contínuo.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👎 <span>0</span></button>
             </div>
             <div>
-                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+                <img src="https://via.placeholder.com/150" alt="Icone de tempo de uso" class="imagem">
             </div>
         </article>
     </main>
 
     <footer>
-        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+        <p>© 2026 Dilemas Digitais | Desenvolvido por Alexandra</p>
     </footer>
 
     <script>
         const botoes = document.querySelectorAll("button");
         botoes.forEach(function (botao) {
             let curtiu = false;
-            botao.addEventListener("click", botaoClicado);
-            function botaoClicado() {
-                console.log("fui clicado");
+            botao.addEventListener("click", function () {
                 let texto = botao.querySelector("span");
-                if (curtiu === false) {
-                    texto.textContent++;
+                if (!curtiu) {
+                    texto.textContent = parseInt(texto.textContent) + 1;
                     curtiu = true;
                 } else {
-                    texto.textContent--;
+                    texto.textContent = parseInt(texto.textContent) - 1;
                     curtiu = false;
                 }
-            }
-        })
+            });
+        });
     </script>
-
 </body>
 
 </html>
